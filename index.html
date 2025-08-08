@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위탁 판매 비즈니스 모델 순서도</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .intro {
+            background-color: #e9ecef;
+            border-left: 5px solid #0056b3;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+        }
+        .intro p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+        .flowchart-section {
+            margin-bottom: 3rem;
+        }
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .step, .decision, .io {
+            background-color: #ffffff;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 1.2rem 1.5rem;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .step:hover, .decision:hover, .io:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            border-color: #007bff;
+        }
+        .step .actor {
+            font-weight: 700;
+            font-size: 0.9rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            color: #fff;
+            position: absolute;
+            top: -15px;
+            left: 20px;
+        }
+        .actor-customer { background-color: #28a745; }
+        .actor-merchant { background-color: #007bff; }
+        .actor-supplier { background-color: #fd7e14; }
+        .actor-platform { background-color: #6f42c1; }
+
+        .step-content {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        .step-note {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 8px;
+        }
+
+        .decision {
+            background-color: #fff0c1;
+            border-color: #ffc107;
+            transform: skewX(-15deg);
+            width: 60%;
+        }
+        .decision .step-content {
+             transform: skewX(15deg);
+        }
+
+        .io {
+            background-color: #d1ecf1;
+            border-color: #17a2b8;
+            clip-path: polygon(20px 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
+        }
+
+        .arrow {
+            font-size: 2rem;
+            color: #6c757d;
+            margin: -0.5rem 0;
+        }
+
+        .split-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .split-path {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 45%;
+        }
+        .split-path h3 {
+            color: #dc3545;
+        }
+
+        @media (max-width: 768px) {
+            .split-container {
+                flex-direction: column;
+            }
+            .split-path {
+                width: 100%;
+            }
+            .step, .decision, .io {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>위탁 판매 비즈니스 모델 순서도</h1>
+        
+        <div class="intro">
+            <p><strong>배경:</strong> 과거 아마존 운영 경험에서 재고 부담과 과도한 경쟁 문제를 겪었으나, 현재의 위탁 판매 모델은 이러한 단점을 극복했습니다.</n            <p><strong>핵심 장점:</strong></p>
+            <ul>
+                <li><strong>재고 불필요:</strong> 상품을 미리 구매하여 쌓아둘 필요가 없어 초기 비용 부담이 없습니다.</li>
+                <li><strong>엄선된 공급업체:</strong> 플랫폼이 직접 심사하고 인정한 공급업체의 상품만 판매하여 품질을 보증하고 고객 신뢰도를 높입니다.</li>
+                <li><strong>안정적인 수익:</strong> 약 30%의 안정적인 이익률을 기대할 수 있습니다.</li>
+                <li><strong>글로벌 공급망:</strong> 190개 이상의 국가와 지역 공급업체와 연결되어, 현지 배송을 통해 효율성을 높입니다.</li>
+                <li><strong>간편한 반품/환불:</strong> 공급업체가 반품 처리를 담당하여 판매자의 부담을 줄여줍니다.</li>
+            </ul>
+        </div>
+
+        <div class="flowchart-section">
+            <h2>✅ 정상 주문 처리 과정</h2>
+            <div class="flowchart">
+                <div class="step">
+                    <span class="actor actor-customer">고객</span>
+                    <div class="step-content">판매자의 쇼핑몰에서 상품 구매 및 결제</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step">
+                    <span class="actor actor-merchant">판매자</span>
+                    <div class="step-content">고객 주문 확인</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step">
+                    <span class="actor actor-merchant">판매자</span>
+                    <div class="step-content">플랫폼을 통해 공급업체에 상품 대금(원가) 지불 및 주문 전달</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step">
+                    <span class="actor actor-supplier">공급업체</span>
+                    <div class="step-content">주문 확인 후, 고객에게 직접 상품 배송</div>
+                    <div class="step-note">해당 지역의 공급업체가 배송을 담당</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step">
+                    <span class="actor actor-customer">고객</span>
+                    <div class="step-content">상품 수령 및 구매 확정</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="io">
+                    <span class="actor actor-merchant">판매자</span>
+                    <div class="step-content">쇼핑몰 계좌에서 수익(약 30%)과 원금 인출</div>
+                    <div class="step-note">거래 완료!</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flowchart-section">
+            <h2>🔄 반품/환불 처리 과정</h2>
+            <div class="flowchart">
+                <div class="step">
+                    <span class="actor actor-customer">고객</span>
+                    <div class="step-content">쇼핑몰을 통해 반품 또는 환불 요청</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="decision">
+                     <div class="step-content">공급업체가 반품된 상품을 수령했는가?</div>
+                </div>
+                <div class="split-container">
+                    <div class="split-path">
+                        <h3>NO</h3>
+                        <div class="step">
+                             <div class="step-content">대기</div>
+                        </div>
+                    </div>
+                    <div class="split-path">
+                        <h3 style="color: #28a745;">YES</h3>
+                        <div class="arrow">⬇️</div>
+                        <div class="step">
+                            <span class="actor actor-supplier">공급업체</span>
+                            <div class="step-content">상품 수령 확인 후, 판매자에게 원가 환불</div>
+                        </div>
+                        <div class="arrow">⬇️</div>
+                        <div class="step">
+                            <span class="actor actor-platform">플랫폼</span>
+                            <div class="step-content">고객에게 주문 금액 전액 환불</div>
+                        </div>
+                         <div class="arrow">⬇️</div>
+                        <div class="io">
+                            <span class="actor actor-merchant">판매자</span>
+                            <div class="step-content">원금 손실 없이 거래 종료</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="flowchart-section">
+            <h2>💡 전문가 의견 및 2025년 트렌드 분석 (Powered by Exa)</h2>
+            <div class="intro" style="border-left-color: #6f42c1;">
+                <p><strong>전문가 총평:</strong> 2025년의 위탁 판매(드랍쉬핑) 시장은 단순한 중개를 넘어, <strong>AI 기반 자동화</strong>와 <strong>고도로 개인화된 고객 경험</strong>을 제공하는 방향으로 진화하고 있습니다. 성공적인 판매자는 더 이상 상품 소싱에만 집중하는 것이 아니라, 데이터 분석을 통해 틈새 시장을 발굴하고, 자동화 도구로 운영을 효율화하며, 지속가능한 가치를 제공하는 브랜드 빌더가 되어야 합니다.</p>
+            </div>
+            <div class="flowchart">
+                <div class="step">
+                    <span class="actor actor-platform">트렌드 1</span>
+                    <div class="step-content"><strong>AI와 자동화의 전면 도입</strong></div>
+                    <div class="step-note">AI가 시장 트렌드를 분석하여 인기 상품을 예측하고, 챗봇이 24시간 고객 문의에 응대하며, 주문 및 재고 관리가 자동화됩니다. 이를 통해 판매자는 운영 부담을 줄이고 마케팅과 브랜딩에 집중할 수 있습니다.</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step">
+                    <span class="actor actor-platform">트렌드 2</span>
+                    <div class="step-content"><strong>초개인화와 틈새 시장(Niche) 공략</strong></div>
+                    <div class="step-note">모두를 위한 '일반 상점'의 시대는 저물고 있습니다. 특정 취미, 관심사, 가치관을 공유하는 고객층을 겨냥한 전문화된 상품(예: 친환경 애견용품, 비건 화장품)이 높은 충성도와 수익성을 보장합니다.</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step">
+                    <span class="actor actor-platform">트렌드 3</span>
+                    <div class="step-content"><strong>지속가능성 및 윤리적 소비</strong></div>
+                    <div class="step-note">소비자들은 더 이상 가격만 보지 않습니다. 친환경 소재를 사용하고, 공정하게 생산된 제품에 기꺼이 지갑을 엽니다. 공급업체의 투명성과 윤리성이 중요한 경쟁력으로 작용합니다.</div>
+                </div>
+                <div class="arrow">⬇️</div>
+                <div class="step">
+                    <span class="actor actor-platform">트렌드 4</span>
+                    <div class="step-content"><strong>숏폼 비디오 커머스의 부상</strong></div>
+                    <div class="step-note">TikTok, YouTube Shorts, Instagram Reels를 통한 상품 발견과 구매가 폭발적으로 증가하고 있습니다. 30초 이내의 짧고 강렬한 영상으로 제품의 매력을 보여주는 것이 핵심 마케팅 전략이 될 것입니다.</div>
+                </div>
+                 <div class="arrow">⬇️</div>
+                <div class="step">
+                    <span class="actor actor-platform">트렌드 5</span>
+                    <div class="step-content"><strong>빠르고 안정적인 현지 배송</strong></div>
+                    <div class="step-note">글로벌 공급망을 활용하더라도, 최종 배송은 고객이 있는 지역의 현지 공급업체를 통해 이루어져야 합니다. 이는 배송 시간을 단축하고 고객 만족도를 극대화하는 가장 확실한 방법입니다.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
