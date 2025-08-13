@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 검색 결과</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Keep a light background */
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #cc0000, #ff0000); /* Red gradient */
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid #ad0059; /* Keep the border from previous design */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: white; /* Ensure h1 is white on the red gradient */
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #0056b3; /* Original h2 color */
+            border-bottom: 2px solid #0056b3; /* Match h2 color */
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border-bottom: 1px solid #dddddd; /* Original border color */
+            text-align: left;
+            padding: 12px 15px;
+        }
+        th {
+            background-color: #4CAF50; /* Original th background color */
+            color: white;
+            font-weight: 600;
+        }
+        tr {
+            transition: background-color 0.3s ease;
+            background: linear-gradient(to right, #fffacd, #fff8dc); /* Light yellow gradient (stronger) */
+        }
+        tr:nth-child(even) {
+            background: linear-gradient(to right, #fffacd, #fff8dc); /* Apply to even rows too */
+        }
+        tr:hover {
+            background: linear-gradient(to right, #ffe0b2, #ffd79b); /* Slightly darker yellow on hover (stronger) */
+        }
+        a {
+            color: #007bff; /* Original h3 color, good for links */
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .insights {
+            background-color: #e9ecef; /* Original insights background */
+            padding: 1.5em;
+            border-left: 5px solid #0056b3; /* Use h2 color for insights border */
+            margin-top: 2em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .insights h3 {
+            margin-top: 0;
+            color: #007bff; /* Original h3 color */
+        }
+        .insights pre {
+            font-size: 1.1em; /* Increase font size */
+            line-height: 1.6; /* Improve line spacing */
+            color: #333; /* Ensure good contrast */
+        }
+        .chart-container {
+            margin-top: 2em;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            background-color: #fff;
+        }
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YouTube 검색 결과</h1>
+    </header>
+    <div class="container">
+        <div class="chart-container">
+<h2>조회수 순위 (막대그래프)</h2>
+<img alt="YouTube Data Chart" src="https://quickchart.io/chart/render/zf-3edfc3d5-5606-43f7-a814-05a9da1fcb93" style="max-width: 100%; height: auto; box-shadow: 5px 5px 15px rgba(0,0,0,0.3); border-radius: 8px;"/>
+</div><h2>제목 '가수 이승철' 검색 결과 (Top 30)</h2><table><tr><th>순위</th><th>제목</th><th>채널</th><th>게시일</th><th>조회수</th><th>좋아요 수</th><th>댓글 수</th></tr><tr><td>1</td><td><a href="https://www.youtube.com/watch?v=aT_qcT69vug" target="_blank">불후의명곡 - 이승철, 역시 라이브의 황제 ´그런 사람 또 없습니다´.20160618</a></td><td>KBS Kpop</td><td>2016-06-18</td><td>20,244,255</td><td>69,331</td><td>5,019</td></tr><tr><td>2</td><td><a href="https://www.youtube.com/watch?v=ntPjSDNTwu4" target="_blank">이승철 '그런 사람 또 없습니다’ 댓글모음👩‍❤️‍👨KBS 20160618</a></td><td>딩가딩가 스튜디오 DGDG Studio</td><td>2022-05-26</td><td>19,642,225</td><td>34,143</td><td>2,608</td></tr><tr><td>3</td><td><a href="https://www.youtube.com/watch?v=R05FtOb5Hz8" target="_blank">[Lyrics Video] Seung-Chul Lee(이승철) - The western sky(서쪽 하늘)</a></td><td>SUPER SOUND Bugs!</td><td>2022-10-03</td><td>12,331,802</td><td>25,468</td><td>1,433</td></tr><tr><td>4</td><td><a href="https://www.youtube.com/watch?v=OtFm5eKLTN4" target="_blank">이승철 홀로아리랑 (Holo Arirang song by LEE SEUNGCHUL)</a></td><td>LEE SEUNGCHUL</td><td>2014-08-24</td><td>6,060,752</td><td>51,369</td><td>6,837</td></tr><tr><td>5</td><td><a href="https://www.youtube.com/watch?v=AF44Sbj9CeM" target="_blank">[고화질] 보컬 클라쓰🔥 제대로 보여주는 이승철 - 인연 | 유희열의 스케치북 KBS 140711 방송</a></td><td>901K</td><td>2021-08-31</td><td>5,445,300</td><td>32,824</td><td>3,814</td></tr><tr><td>6</td><td><a href="https://www.youtube.com/watch?v=XAg2KNUz90Y" target="_blank">이승철💕 Best노래모음 - 13곡연속듣기</a></td><td>Ami Music</td><td>2019-12-29</td><td>3,765,664</td><td>19,529</td><td>784</td></tr><tr><td>7</td><td><a href="https://www.youtube.com/watch?v=Be1sJXQO5L8" target="_blank">이승철에게 두 번 당한 김태원</a></td><td>사고방식</td><td>2023-05-31</td><td>3,117,376</td><td>26,573</td><td>2,386</td></tr><tr><td>8</td><td><a href="https://www.youtube.com/watch?v=TV-U45a4Auk" target="_blank">이승철 - 그런 사람 또 없습니다 [슬픔보다 더 슬픈이야기 OST] [가사/Lyrics]</a></td><td>웅키</td><td>2023-05-26</td><td>2,982,961</td><td>16,809</td><td>648</td></tr><tr><td>9</td><td><a href="https://www.youtube.com/watch?v=YAeLW3Dh0Tk" target="_blank">전성기 이승철 급이라는 '말리꽃' 커버 TOP4</a></td><td>간주점프</td><td>2024-06-12</td><td>2,354,271</td><td>0</td><td>1,664</td></tr><tr><td>10</td><td><a href="https://www.youtube.com/watch?v=Mpd-iPrG0zo" target="_blank">라이브 황제 이승철의 〈네버엔딩스토리〉 #놀라운토요일</a></td><td>디글 :Diggle</td><td>2024-09-02</td><td>2,239,906</td><td>33,660</td><td>795</td></tr><tr><td>11</td><td><a href="https://www.youtube.com/watch?v=BSqmex61Ys4" target="_blank">이승철X박보검 - 내가 많이 사랑해요 [더 시즌즈-박보검의 칸타빌레] | KBS 250418 방송</a></td><td>KBS Kpop</td><td>2025-04-18</td><td>1,942,808</td><td>22,907</td><td>1,213</td></tr><tr><td>12</td><td><a href="https://www.youtube.com/watch?v=mz8PokJqOSc" target="_blank">이승철의 여자 강문영의 얼굴이 충격적으로 변하게 된 진짜 이유</a></td><td>1분 뚝딱 랭킹</td><td>2024-11-07</td><td>1,576,867</td><td>12,462</td><td>491</td></tr><tr><td>13</td><td><a href="https://www.youtube.com/watch?v=AcfQKaEHafM" target="_blank">노래방에서 노래연습하는 가왕 조용필을 샤라웃하는 이승철 #이승철 #조용필</a></td><td>톡톡숏카</td><td>2024-12-01</td><td>1,324,057</td><td>13,766</td><td>228</td></tr><tr><td>14</td><td><a href="https://www.youtube.com/watch?v=wYdRRWCUjpg" target="_blank">[노무현 전 대통령 추도식] 이승철 ‘그런 사람 또 없습니다’ 추모 무대</a></td><td>서울신문 </td><td>2018-05-23</td><td>1,285,759</td><td>16,140</td><td>1,950</td></tr><tr><td>15</td><td><a href="https://www.youtube.com/watch?v=9N9Q5FuDIY0" target="_blank">이승철 임재범 김현식☘️ 추억의노래 ☘️ 기분좋아지는노래 ☘️ 모음 4.</a></td><td>Chill Pop</td><td>2023-07-23</td><td>1,167,188</td><td>5,395</td><td>101</td></tr><tr><td>16</td><td><a href="https://www.youtube.com/watch?v=n6b_Q-S7US8" target="_blank">이승철 - 말리꽃 + 그런 사람 또 없습니다 + 서쪽 하늘 [더 시즌즈-박보검의 칸타빌레] | KBS 250418 방송</a></td><td>KBS Kpop</td><td>2025-04-18</td><td>1,152,232</td><td>4,630</td><td>474</td></tr><tr><td>17</td><td><a href="https://www.youtube.com/watch?v=-zhMat0r8DE" target="_blank">이승철 - 잊었니 [신들의 만찬 OST] [가사/Lyrics]</a></td><td>웅키</td><td>2023-03-13</td><td>969,851</td><td>5,678</td><td>134</td></tr><tr><td>18</td><td><a href="https://www.youtube.com/watch?v=8jbuE8CdEnU" target="_blank">이승철 - 말리꽃 [더 시즌즈-지코의 아티스트] | KBS 240614 방송</a></td><td>KBS Kpop</td><td>2024-06-14</td><td>930,717</td><td>5,028</td><td>765</td></tr><tr><td>19</td><td><a href="https://www.youtube.com/watch?v=phhFpSZ0og4" target="_blank">🌼그 사람 - 이승철 - (가사有)</a></td><td>해피U희열</td><td>2022-08-30</td><td>765,722</td><td>4,698</td><td>209</td></tr><tr><td>20</td><td><a href="https://www.youtube.com/watch?v=lvnANBZ82vQ" target="_blank">이승철 - 말리꽃 [가사/Lyrics]</a></td><td>웅키</td><td>2024-01-23</td><td>709,049</td><td>3,614</td><td>91</td></tr><tr><td>21</td><td><a href="https://www.youtube.com/watch?v=hEA2BDwibXU" target="_blank">이승철 - My Love [가사/Lyrics]</a></td><td>웅키</td><td>2023-10-14</td><td>637,279</td><td>3,339</td><td>107</td></tr><tr><td>22</td><td><a href="https://www.youtube.com/watch?v=6MVbYs071FM" target="_blank">이승철(Lee Seungcheol) - 네버 엔딩 스토리 [윤도현의 러브레터] | KBS 20030621 방송</a></td><td>Again 가요톱10 : KBS KPOP Classic</td><td>2021-11-04</td><td>598,327</td><td>4,005</td><td>508</td></tr><tr><td>23</td><td><a href="https://www.youtube.com/watch?v=dyPMtOTNpIg" target="_blank">이승철(Seung Chul Lee)이 부르는 롤 모델 故 김현식의 노래, 〈비처럼 음악처럼〉♬ 유명가수전(famous singers) 5회 | JTBC 210430 방송</a></td><td>JTBC Entertainment</td><td>2021-04-30</td><td>448,166</td><td>3,794</td><td>490</td></tr><tr><td>24</td><td><a href="https://www.youtube.com/watch?v=7IWQAoGTq5Q" target="_blank">이승철 베스트 5곡</a></td><td>운광</td><td>2025-03-01</td><td>442,430</td><td>3,567</td><td>269</td></tr><tr><td>25</td><td><a href="https://www.youtube.com/watch?v=XFwnhLBDou8" target="_blank">이승철 30주년 기념 콘서트 마이러브 반복</a></td><td>주원</td><td>2021-10-28</td><td>411,201</td><td>2,265</td><td>176</td></tr><tr><td>26</td><td><a href="https://www.youtube.com/watch?v=Zvw1irIN0ro" target="_blank">이승철 - '가로수 그늘 아래 서면' [콘서트7080, 2005] |  Lee Seung-chul -  'In the Shade of the Street Tree'</a></td><td>Again 가요톱10 : KBS KPOP Classic</td><td>2020-04-26</td><td>156,858</td><td>923</td><td>113</td></tr><tr><td>27</td><td><a href="https://www.youtube.com/watch?v=w9RyJxy8FiQ" target="_blank">이승철 - '안녕이라고 말하지마' [가요톱10, 1989]</a></td><td>Again 가요톱10 : KBS KPOP Classic</td><td>2018-10-02</td><td>155,322</td><td>1,327</td><td>160</td></tr><tr><td>28</td><td><a href="https://www.youtube.com/watch?v=PacMEqmO2ds" target="_blank">대한민국 가수 중에 "이승철"이 가장 잘하는 스킬</a></td><td>보컬트레이너장효진</td><td>2024-07-08</td><td>102,610</td><td>1,501</td><td>31</td></tr><tr><td>29</td><td><a href="https://www.youtube.com/watch?v=iP1EerIXWeU" target="_blank">[#again_playlist] 라이브 황제, 이승철 모음.zip | KBS 방송</a></td><td>Again 가요톱10 : KBS KPOP Classic</td><td>2024-11-14</td><td>59,291</td><td>710</td><td>41</td></tr><tr><td>30</td><td><a href="https://www.youtube.com/watch?v=eEh2as2rntw" target="_blank">이승철이 부활을 떠난 진짜 이유 | 부활 이야기</a></td><td>예술잡썰</td><td>2025-05-01</td><td>45,553</td><td>430</td><td>175</td></tr></table><div class="insights"><h3>분석 인사이트</h3><pre>--- 제목 검색 동영상 분석 인사이트 ---
+
+[제목 '가수 이승철' 검색 결과 분석]
+  총 30개의 동영상을 분석했습니다.
+
+  조회수 상위 5개 영상:
+    1. 불후의명곡 - 이승철, 역시 라이브의 황제 ´그런 사람 또 없습니다´.20160618 (20,244,255회)
+    2. 이승철 '그런 사람 또 없습니다’ 댓글모음👩‍❤️‍👨KBS 20160618 (19,642,225회)
+    3. [Lyrics Video] Seung-Chul Lee(이승철) - The western sky(서쪽 하늘) (12,331,802회)
+    4. 이승철 홀로아리랑 (Holo Arirang song by LEE SEUNGCHUL) (6,060,752회)
+    5. [고화질] 보컬 클라쓰🔥 제대로 보여주는 이승철 - 인연 | 유희열의 스케치북 KBS 140711 방송 (5,445,300회)
+
+  좋아요 상위 5개 영상:
+    1. 불후의명곡 - 이승철, 역시 라이브의 황제 ´그런 사람 또 없습니다´.20160618 (69,331개)
+    2. 이승철 홀로아리랑 (Holo Arirang song by LEE SEUNGCHUL) (51,369개)
+    3. 이승철 '그런 사람 또 없습니다’ 댓글모음👩‍❤️‍👨KBS 20160618 (34,143개)
+    4. 라이브 황제 이승철의 〈네버엔딩스토리〉 #놀라운토요일 (33,660개)
+    5. [고화질] 보컬 클라쓰🔥 제대로 보여주는 이승철 - 인연 | 유희열의 스케치북 KBS 140711 방송 (32,824개)
+
+  댓글 상위 5개 영상:
+    1. 이승철 홀로아리랑 (Holo Arirang song by LEE SEUNGCHUL) (6,837개)
+    2. 불후의명곡 - 이승철, 역시 라이브의 황제 ´그런 사람 또 없습니다´.20160618 (5,019개)
+    3. [고화질] 보컬 클라쓰🔥 제대로 보여주는 이승철 - 인연 | 유희열의 스케치북 KBS 140711 방송 (3,814개)
+    4. 이승철 '그런 사람 또 없습니다’ 댓글모음👩‍❤️‍👨KBS 20160618 (2,608개)
+    5. 이승철에게 두 번 당한 김태원 (2,386개)
+
+  종합 인사이트:
+    조회수, 좋아요, 댓글 상위 영상들이 다를 수 있습니다. 각 지표별로 다른 유형의 콘텐츠가 인기를 얻고 있음을 시사합니다.
+    총 조회수: 93,065,799회, 총 좋아요 수: 425,885개, 총 댓글 수: 33,714개
+    평균 조회수: 3,102,193회, 평균 좋아요 수: 14,196개, 평균 댓글 수: 1,123개</pre></div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Gemini CLI. All rights reserved.</p>
+    </footer>
+</body>
+</html>
